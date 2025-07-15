@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Report</title>
+</head>
+<body>
+    <main>
+    <h2>Client Report</h2>
+    <p>Report goes here</p>
+
+    <h2>Lead Developer Report</h2>
+    <p>Report goes here</p>
+
+    <h2>Client Report</h2>
+    <p>Report goes here</p>
+
+    <h2>General Experiance</h2>
+    <p>Report goes here</p>
+    </main>
+
+    <div id="footer">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                })
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        })
+    </script>
+    </div>
+</body>
+</html>

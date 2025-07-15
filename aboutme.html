@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles/style2.css">
+</head>
+
+<body>
+    
+    <div id="wrapper">
+        <header>
+            <img src="images/mocha.png" alt="picture a frenchie" class="mocha-img">
+            <h1>Melanie's Web Studio</h1>
+            <img src="images/Brookie.png" alt="picture of a frenchie" class="brookie-img">
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
+        <main>
+            <h1>About Me </h1>
+            <img src="images/hawaiitime.jpg" alt="Somthing here to describe">
+            <div class="content">
+                <p>Bacon ipsum dolor amet swine pork short loin, tenderloin landjaeger turducken pork chop ground round chuck kielbasa chislic. Boudin leberkas tri-tip tail swine pig strip steak shank chuck pastrami ham venison. Tail kielbasa shankle, beef swine ribeye meatloaf pastrami t-bone chislic cow fatback corned beef ball tip. Drumstick pork andouille ham hock leberkas frankfurter corned beef buffalo boudin, shankle kielbasa pork chop short loin fatback</p>
+
+                <p>Buffalo chislic pastrami turkey burgdoggen pork ham. Frankfurter salami short ribs sirloin leberkas spare ribs pastrami capicola drumstick pancetta. Bresaola bacon ground round pancetta meatloaf pork belly. Tenderloin pork belly salami, pork pork chop tri-tip ground round. Chislic buffalo hamburger, corned beef strip steak ham pork chop short ribs pastrami tri-tip jerky biltong pork belly.</p>
+
+                <p>Strip steak drumstick meatball landjaeger, turducken tongue jowl short loin tri-tip venison alcatra. Shoulder kielbasa leberkas, shank pork loin hamburger bacon shankle burgdoggen pork chop pastrami tri-tip swine salami. Turducken boudin ham biltong ribeye kielbasa frankfurter, andouille doner ground round pancetta drumstick prosciutto hamburger. Bresaola tongue ball tip kevin tenderloin.</p>
+
+                <p>Pork belly venison bresaola strip steak short loin. Fatback swine hamburger, short loin andouille salami spare ribs jerky tri-tip meatloaf. Strip steak pancetta capicola boudin tenderloin kevin. Salami leberkas brisket, tongue biltong t-bone short loin ground round shank capicola landjaeger. Doner salami boudin, ground round jowl pork chop brisket tail venison bacon beef short loin beef ribs filet mignon t-bone. Turducken prosciutto cupim, buffalo landjaeger alcatra shankle pork chop corned beef pork loin bacon biltong porchetta swine beef. Shoulder beef ribs bresaola andouille pork belly landjaeger capicola, alcatra ground round strip steak turkey cupim.</p> 
+            </div>
+        </main>
+   <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        })
+    </script>
+    </div>
+
+</body>
+
+</html>

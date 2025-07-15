@@ -1,0 +1,247 @@
+body {
+    background: #aed9e0;
+    background-image: url("../images/");
+    background-repeat: repeat;
+}
+
+#wrapper{
+    background-color: #f8ecd4;
+    width: 1200px;
+    margin: auto;
+    border: 3px solid #2e7186;
+    border-radius: 10px;
+    display: grid;
+}
+
+header{
+    background: #2e7186;
+    padding: 30px;
+}
+
+header{
+    background-color: #f8ecd4;
+    background-position: 0 313px;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+}
+
+header img{
+    width: 140px;
+}
+
+header h1{
+    display: inline;
+    color: #a8e6cf;
+    font-size: 4em;
+}
+
+.mocha-img{
+    float: left
+}
+
+.brookie-img{
+    float: right
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 250px 150px; 
+  grid-template-rows: auto auto auto;
+  gap: 15px;
+  width: 290px; 
+  margin: 0; 
+  float: left; 
+  margin-right: 30px; 
+  margin-left: 150px;
+}
+
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.gallery img:nth-child(1) { grid-row: 1; grid-column: 1; }
+.gallery img:nth-child(2) { grid-row: 1; grid-column: 2; }
+.gallery img:nth-child(3) { 
+  grid-row: 2; 
+  grid-column: 1 / span 2; 
+  justify-self: center; 
+}
+.gallery img:nth-child(4) { grid-row: 3; grid-column: 1; }
+.gallery img:nth-child(5) { grid-row: 3; grid-column: 2; }
+
+
+h2{
+    text-align: center;
+    color: #a8e6cf;
+    font-size: 2em;
+}
+
+nav{
+    background: #a8e6cf;
+    border-bottom: 5px solid #2e7186;
+    border-top: 5px solid #2e7186;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    height: 60px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:grey;
+    padding: 0 30px;
+}
+
+nav a:hover {
+    background: #cbaacb;
+    text-shadow: 2px 2px 2px white;
+}
+
+.section-one{
+    width: 20%;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #f8ecd4;
+    color: 2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-two{
+    width: 20%;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #cbaacb;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-three{
+    width: 20%;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #a8e6cf;
+    color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    float: left;
+    margin-right: 90px;
+    max-width: 200px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../image/");
+    background-position: 0 -42px;
+    padding: 30px;
+
+}
+
+footer ul li a{
+    text-align: none;
+    color:#c9a0dc;
+    font-size: 1.25em;
+}
+
+footer form{
+    background: #e6e1c6;
+    padding: 10px 20px;
+    border: 3px dashed #384856;
+    border-radius: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-row-gap: 7px;
+    height: 15px;
+    overflow: hidden;
+    transition: height 0.75s ease-out;
+}
+
+footer form:hover{
+    height: 200px;
+    transition: height .85s ease-in;
+}
+
+footer form h3{
+    margin: 0;
+    grid-column: 1 / 3;
+}
+
+footer p {
+  justify-self: end;
+  margin-top: 20px;
+  color: #c9a0dc;
+  font-size: 1em;
+}
+
+section{
+    border: 3px solid #384856;
+    background: #e6e1c6;
+    padding: 0 30px;
+    margin: 20px 14px;
+}
+
+section img{
+    width: 100%;
+}
+
+table{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+table.paleBlueRows {
+  width: 50%;
+  margin: 20px 0 20px 20px;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8ecd4; 
+}
+
+table.paleBlueRows thead {
+  background-color: #cbaacb; 
+}
+
+table.paleBlueRows thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 8px;
+}
+
+table.paleBlueRows td {
+  border: 1px solid #ffffff;
+  padding: 10px 8px;
+  color: #333;
+}
+
+table.paleBlueRows tr:nth-child(even) {
+  background-color: #a8e6cf; 
+}
+
+table.paleBlueRows tr:nth-child(odd) {
+  background-color: #aed9e0; 
+}
+
+table.paleBlueRows tr:hover {
+  color: #fff; 
+}

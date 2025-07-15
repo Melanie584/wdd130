@@ -1,0 +1,103 @@
+body {
+    background: #aed9e0;
+    background-image: url("../images/");
+    background-repeat: repeat;
+}
+
+#wrapper{
+    background-color: #f8ecd4;
+    width: 1200px;
+    margin: auto;
+    border: 3px solid #2e7186;
+    border-radius: 10px;
+    display: grid;
+}
+
+header{
+    background: #2e7186;
+    padding: 30px;
+}
+
+header{
+    background-color: #f8ecd4;
+    background-position: 0 313px;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+}
+
+header img{
+    width: 140px;
+}
+
+header h1{
+    display: inline;
+    color: #a8e6cf;
+    font-size: 4em;
+}
+
+.mocha-img{
+    float: left
+}
+
+.brookie-img{
+    float: right
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav{
+    background: #a8e6cf;
+    border-bottom: 5px solid #2e7186;
+    border-top: 5px solid #2e7186;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    height: 60px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:grey;
+    padding: 0 30px;
+}
+
+nav a:hover {
+    background: #cbaacb;
+    text-shadow: 2px 2px 2px white;
+}
+
+.content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 0 20px;
+    text-align: left;
+    margin-top: -90px
+}
+
+section{
+    border: 3px solid #384856;
+    background: #e6e1c6;
+    padding: 0 30px;
+    margin: 20px 14px;
+}
+
+main img{
+    width: 400px;
+    height: auto;
+}
+
+footer p {
+  justify-self: end;
+  margin-top: 20px;
+  color: #c9a0dc;
+  font-size: 1em;
+}

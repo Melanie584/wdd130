@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    
+    <div id="wrapper">
+        <div id="header"></div>
+        <main>
+            <h2>Welcome to my portal page</h2>
+            <div class="gallery">
+                <img src="images/hawaii.png" alt="Hawaii">
+                <img src="images/Toranto.png" alt="Toranto">
+                <img src="images/christ.jpg" alt="">
+                <img src="images/cartoon canela.png" alt="canela as a cartoon dog">
+                <img src="images/temple.png" alt="Las Vegas temple">
+            </div>
+            <section class="section-one">
+                <p>Sesame snaps bonbon cheesecake tootsie roll pudding. Sugar plum dragée ice cream jelly sugar plum bear claw. Sugar plum chocolate bar croissant croissant jujubes fruitcake sesame snaps bear claw. Jelly lemon drops sweet dragée apple pie.</p>
+            </section>
+            <section class="section-two">
+                <p>Biscuit gummies carrot cake biscuit marshmallow powder. Oat cake sweet chocolate apple pie liquorice gummi bears shortbread. Sweet roll tootsie roll pie cookie toffee candy canes shortbread. Halvah chocolate bar sesame snaps cheesecake danish muffin chocolate bar macaroon.</p>
+            </section>
+            <section class="section-three">
+                <P>Jelly-o powder marzipan pudding bonbon. Jelly-o jelly brownie toffee gummi bears macaroon chupa chups pie macaroon. Bear claw gummies shortbread dragée dessert caramels gummi bears oat cake. Chocolate chocolate bar jelly wafer soufflé candy canes cake cheesecake pudding.</P>
+            </section>
+
+           <table class="paleBlueRows">
+            <thead>
+                <tr>
+                <th>Class Name</th>
+                <th>Time</th>
+                <th>Room Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Web Fundamentals</td>
+                <td>T H 9am</td>
+                <td>STC 385</td>
+                </tr>
+                <tr>
+                <td>Programming With Classes</td>
+                <td>M W 9am</td>
+                <td>STC 396</td>
+                </tr>
+            </tbody>
+            </table>
+
+        </main>
+        <div id="footer"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                })
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        })
+    </script>
+</body>
+
+</html>
