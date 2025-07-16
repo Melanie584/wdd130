@@ -23,7 +23,6 @@ header{
     background-position: 0 313px;
     background-size: cover;
     padding: 30px;
-    text-align: center;
 }
 
 header img{
@@ -34,6 +33,7 @@ header h1{
     display: inline;
     color: #a8e6cf;
     font-size: 4em;
+    text-align: center;
 }
 
 .mocha-img{

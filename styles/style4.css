@@ -56,6 +56,13 @@ h2{
     font-family: 'Dancing Script', cursive;
 }
 
+p{
+    background-color: #A47DAB;
+    text-align: center;
+    
+}
+
+
 nav{
     background: #a8e6cf;
     border-bottom: 5px solid #2e7186;
