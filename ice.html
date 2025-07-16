@@ -11,17 +11,8 @@
 <body>
     
     <div id="wrapper">
-        <header>
-            <img src="images/mocha.png" alt="picture a frenchie" class="mocha-img">
-            <h1>Melanie's Web Studio</h1>
-            <img src="images/Brookie.png" alt="picture of a frenchie" class="brookie-img">
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/index.html">WWR</a>
-            <a href="ice.html">ICE</a>
-            <a href="aboutme.html">About Me</a>
-        </nav>
+        <div id="header"></div>
+
         <main>
             <h1>ICE Projects </h1>
             <section>
@@ -38,18 +29,17 @@
             </section>
 
         </main>
-        <footer>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wwr/index.html">WWR</a></li>
-                <li><a href="ice/index.html">ICE</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-            </ul>
-        
-            <p>&copy; Maldonado 2025</p>
-        </footer>
-    </div>
+    </div> <!-- closes #wrapper -->
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                });
+            });
+    </script>
 </body>
 
 </html>

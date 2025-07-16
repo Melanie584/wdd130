@@ -11,17 +11,8 @@
 <body>
     
     <div id="wrapper">
-        <header>
-            <img src="images/mocha.png" alt="picture a frenchie" class="mocha-img">
-            <h1>Melanie's Web Studio</h1>
-            <img src="images/Brookie.png" alt="picture of a frenchie" class="brookie-img">
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/index.html">WWR</a>
-            <a href="ice.html">ICE</a>
-            <a href="aboutme.html">About Me</a>
-        </nav>
+        <div id="header"></div>
+        
         <main>
             <h1>About Me </h1>
             <img src="images/hawaiitime.jpg" alt="Somthing here to describe">
@@ -35,23 +26,24 @@
                 <p>Pork belly venison bresaola strip steak short loin. Fatback swine hamburger, short loin andouille salami spare ribs jerky tri-tip meatloaf. Strip steak pancetta capicola boudin tenderloin kevin. Salami leberkas brisket, tongue biltong t-bone short loin ground round shank capicola landjaeger. Doner salami boudin, ground round jowl pork chop brisket tail venison bacon beef short loin beef ribs filet mignon t-bone. Turducken prosciutto cupim, buffalo landjaeger alcatra shankle pork chop corned beef pork loin bacon biltong porchetta swine beef. Shoulder beef ribs bresaola andouille pork belly landjaeger capicola, alcatra ground round strip steak turkey cupim.</p> 
             </div>
         </main>
-   <script>
-    document.addEventListener("DOMContentLoaded", function(){
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            })
+        <div id="footer"></div>
+    </div> 
 
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-        })
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        });
     </script>
-    </div>
-
 </body>
 
 </html>

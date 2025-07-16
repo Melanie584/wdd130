@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style4.css">
     <title>Client Report</title>
 </head>
 <body>
-    <main>
-    <h2>Client Report</h2>
-    <p>Report goes here</p>
+    <div id="wrapper">
 
-    <h2>Lead Developer Report</h2>
-    <p>Report goes here</p>
+    <div id="header"></div>
+        <main>
+        <h2>Client Report</h2>
+        <p>As the client for this project, I was very impressed with the work my lead developer, Linling, did for me. The idea for my site was to make it entertaining and for the team working on the project to have fun with it. Communicating with my lead developer was very easy because I could contact her in several different ways, which was extremely helpful. This included email, phone, and more. Next time I hire a team, I would like to get the contact information of the other team members working on my site as well. That way, if they have any questions that our lead developer can’t answer, they could reach out to me directly </p>
 
-    <h2>Client Report</h2>
-    <p>Report goes here</p>
+        <h2>Lead Developer Report</h2>
+        <p>As the lead developer, it was a bit difficult communicating with my team members. I do think it was partially my fault for not getting any other form of contact besides their emails. In general, it was hard to get them to respond and fully understand what I wanted them to do for their part of the assignment. I made sure to always keep everything up to date, and any changes I made, I double-checked from my end to ensure that both my junior developers and my client could see their page. Overall, being the lead developer was fun, and I made sure everything was ready to go for my junior developers and client, but it was definitely challenging </p>
 
-    <h2>General Experiance</h2>
-    <p>Report goes here</p>
+        <h2>Junior Developer Report</h2>
+        <p>As a junior developer, communication was great with the two teams I worked with. From the very beginning, I understood what I needed to do and what was expected of me. Although I didn’t contribute as much to my part of the pages as I would have liked, I tried my best to do what I could. I didn’t run into any issues while using GitHub, but I made sure to refresh frequently and avoid touching anything that could potentially interfere with the code the rest of the team was working on. Overall, I’d say it was a good experience, and I tried my best to contribute as much as possible </p>
+
+        <h2>General Experiance</h2>
+        <p>Overall, this project was really fun, and I enjoyed it a lot more than I expected. I think it’s a great way to show what it will be like when you eventually work in the field with many different types of people. I also liked how this project allowed us to apply what we’ve learned. While we did the previous project where we created a website about ourselves, this one challenged me to rely on my memory and test my skills, instead of constantly referring to another file and copying and pasting from it. I feel the most challenging part of this assignment was working with CSS. I believe I have most of the HTML down, but I still struggle with CSS. If I could redo this project, the only thing I would do differently is study CSS beforehand so I could better remember the different things you can do with it. Overall, this project made me feel more confident about working with different teams and understanding what’s expected in collaborative projects like this  </p>
     </main>
 
-    <div id="footer">
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header").innerHTML = data;
-                })
-
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer").innerHTML = data;
-                });
+    
+   <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
         })
     </script>
-    </div>
 </body>
 </html>

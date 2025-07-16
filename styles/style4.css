@@ -45,7 +45,13 @@ header h1{
 }
 
 h1{
-    margin-left: 150px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2{
+    text-align: center;
     margin-top: 20px;
     font-family: 'Dancing Script', cursive;
 }
@@ -81,7 +87,7 @@ nav a:hover {
     margin-right: 40px;
     padding: 0 20px;
     text-align: left;
-    margin-top: -400px;
+    margin-top: -90px
 }
 
 section{
@@ -92,8 +98,8 @@ section{
 }
 
 main img{
-    width: 25%;
-    margin-left: 100px;
+    width: 400px;
+    height: auto;
 }
 
 footer p {
@@ -102,5 +108,3 @@ footer p {
   color: #c9a0dc;
   font-size: 1em;
 }
-
-
